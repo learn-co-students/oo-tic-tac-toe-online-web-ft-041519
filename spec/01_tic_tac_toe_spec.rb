@@ -306,7 +306,7 @@ describe './lib/tic_tac_toe.rb' do
         game = TicTacToe.new
         board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
         game.instance_variable_set(:@board, board)
-
+        #binding.pry
         expect(game.winner).to be_nil
       end
     end
